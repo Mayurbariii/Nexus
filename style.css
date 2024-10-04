@@ -54,7 +54,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #00ffff;
+    background-color: #00D7FF;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
@@ -66,13 +66,13 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: #00ffff;
+    color: #00D7FF;
     transform: translateY(100%);
     transition: transform 0.3s ease;
 }
 
 .menu ul li a:hover {
-    color: #00ffff;
+    color: #00D7FF;
 }
 
 .menu ul li a:hover::before {
@@ -321,7 +321,55 @@
 }
 
 
+/* Page 6 */
 
+.info-box {
+    transition: all 0.3s ease;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    position: relative;
+}
+
+.info-box:hover {
+    background: transparent;
+    backdrop-filter: blur(15px); /* Increased blur on hover */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(-5px);
+}
+
+.info-box h3 {
+    background-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.info-box:hover h3 {
+    background-color: transparent;
+    text-align: center;
+    transform: translateY(0);
+}
+
+.info-box p {
+    background: transparent;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+    transform: translateY(20px);
+}
+
+.info-box:hover p {
+    background-color: transparent;
+    opacity: 1;
+    max-height: 200px; /* Adjust this value based on your content */
+    transform: translateY(0);
+}
 
 
 
