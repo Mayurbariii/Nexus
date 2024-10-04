@@ -201,6 +201,7 @@
 }
 
 .info-section .title-column {
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -223,6 +224,21 @@
 .info-section .title-column:hover div {
     width: 100%;
 }
+
+.info-section .title-column p {
+    margin-bottom: 0.5rem;
+}
+.info-section .title-column p:hover {
+    color: #00ffff;
+}
+.info-section .title-section .title-column .line {
+    width: 5rem;
+    transition: width 0.3s ease;
+}
+.info-section .title-section .title-column:hover .line {
+    width: 10rem;
+}
+
 
 
 
