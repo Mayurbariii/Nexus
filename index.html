@@ -23,8 +23,13 @@
                 <li><a href="#">Geology</a></li>
                 <li><a href="#">Chemosynthesis</a></li>
             </ul>
+            
         </div>
     </div>
+
+
+
+    <!-- Page 1 -->
     <div class="header">
         <div class="left">
             <div class="heading" style="margin-top: 30vh; ">
@@ -33,20 +38,73 @@
               <button style="margin-left:1rem; background-color: transparent; color: white; border: 2px solid white; border-radius: 10px; padding: 1rem; padding-left: 2rem; padding-right: 2rem; font-size: 1rem; font-weight: bold;">Start Journey</button>  
             </div>
         </div>
+        <!-- 3D Model -->
         <div class="right" id="container-3d">
-            
+            <img class="planet-1" src="/planet-1.png" alt="Ocean World" style="width: 100%; height: 80%; object-fit: cover;">
             <!-- <div class="sketchfab-embed-wrapper"> <iframe style="width: 100%; height: 100vh;" src="https://sketchfab.com/models/8c1f58bf10f04cae807b6fd4ce86d13b/embed"> </iframe> </div> -->
         </div>
     </div>
-    <div class="page-1" style="padding: 2rem 0;">
-        <div class="video-container" style="width: 80%; margin: 0 auto; position: relative; padding-bottom: 45%; /* 16:9 Aspect Ratio */"> 
-            <iframe autoplay muted loop
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                src="" 
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+
+
+
+    <!-- Page 2 -->
+    <div class="page-2" style="padding: 2rem 0; height: 150vh;" >
+        <div class="image-container" style="padding-top: 3rem; width: 100%; height: 100vh; overflow: hidden; position: relative;">
+            <img src="/planet-1.png" alt="Zoomed Image" style="width: 100%; height: 100%; object-fit: contain; object-position: bottom; transform: scale(1.5); z-index: 0;">
+        </div>
+        <div class="overlay" style="position: absolute; top: calc(150vh + 3rem); left: 10%; width: 80%; height: 80%; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); z-index: 1;">
+        <!-- Content for the overlay can be added here -->
+            <h2 style="color: white; font-size: 2rem; text-align: center; padding-top: 2rem; padding-bottom: 2rem; background-color: transparent; display: flex; justify-content: center; align-items: center; height: 100%;">Video is here</h2>
+        </div>
+    </div>
+
+
+
+    <!-- Page 3 -->
+    <div class="page-3" style="display: flex; padding: 2rem 0; height: 100vh;">
+        <div class="left" style="width: 70%; padding: 2rem;">
+            <h1 style="font-size: 3rem; color: white; margin-bottom: 1rem;">Nexus</h1>
+            <h2 style="font-size: 1.5rem; color: #00ffff; margin-bottom: 2rem;">Overview</h2>
+            <div class="info-section" style="color: white; font-size: 1rem; line-height: 1.6; margin-top: 7rem;">
+                <div class="title-section" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 2rem;">
+                    <div class="title-column" style="width: 30%; margin-bottom: 1rem;">
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Radius</h3>
+                        <div class="line style="width: 50px; height: 2px; background-color: white; margin-bottom: 0.5rem;"></div>
+                        <p style="color: #00ffff; font-size: 0.9rem;">7,000 km</p>
+                    </div>
+                    <div class="title-column" style="width: 30%; margin-bottom: 1rem;">
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Distance from Earth</h3>
+                        <div class="line style="width: 50px; height: 2px; background-color: white; margin-bottom: 0.5rem;"></div>
+                        <p style="color: #00ffff; font-size: 0.9rem;">4.24 light-years </p>
+                    </div>
+                    <div class="title-column" style="width: 30%; margin-bottom: 1rem;">
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Gravity</h3>
+                        <div class="line style="width: 50px; height: 2px; background-color: white; margin-bottom: 0.5rem;"></div>
+                        <p style="color: #00ffff; font-size: 0.9rem;">1.1 Times of Earth</p>
+                    </div>
+                    <div class="title-column" style="width: 30%; margin-bottom: 1rem;">
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">ATM Composition</h3>
+                        <div class="line style="width: 50px; height: 2px; background-color: white; margin-bottom: 0.5rem;"></div>
+                        <p style="color: #00ffff; font-size: 0.9rem;">150 times less dense than Earth</p>
+                    </div>
+                    <div class="title-column" style="width: 30%; margin-bottom: 1rem;">
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Core Temperature</h3>
+                        <div class="line style="width: 50px; height: 2px; background-color: white; margin-bottom: 0.5rem;"></div>
+                        <p style="color: #00ffff; font-size: 0.9rem;">5,000°C to 6,000°C</p>
+                    </div>
+                    <div class="title-column" style="width: 30%; margin-bottom: 1rem;">
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Surface Area</h3>
+                        <div class="line style="width: 50px; height: 2px; background-color: white; margin-bottom: 0.5rem;"></div>
+                        <p style="color: #00ffff; font-size: 0.9rem;">616 million sq km <br>
+                            (~1.2 times Earth's surface)</p>
+                    </div>
+                </div>
+                <p>Nexus is a unique ocean world where chemosynthesis thrives. Unlike Earth's photosynthesis-based ecosystems, Nexus's life forms derive energy from chemical reactions in the absence of sunlight.</p>
+                <p style="margin-top: 1rem;">This alien environment hosts a diverse array of organisms adapted to extreme conditions, offering valuable insights into the potential for life in the cosmos.</p>
+            </div>
+        </div>
+        <div class="right" style="width: 30%; display: flex; justify-content: center; align-items: center;">
+            <img src="/planet-1.png" alt="Nexus Planet" style="max-width: 100%; max-height: 100%; object-fit: contain;">
         </div>
     </div>
     
