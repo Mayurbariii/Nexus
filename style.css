@@ -239,6 +239,55 @@
     width: 10rem;
 }
 
+/* Page 4 */
+
+.page-4 {
+    padding: 2rem 0;
+    height: 100vh;
+}
+
+.moon-info .moon-info-column {
+    transition: all 0.3s ease;
+}
+
+.moon-info .moon-info-column:hover {
+    transform: translateY(-5px);
+}
+
+.moon-info .moon-info-column h3 {
+    margin-bottom: 0.5rem;
+}
+
+.moon-info .moon-info-column .line {
+    width: 5rem;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    transition: width 0.3s ease;
+}
+
+.moon-info .moon-info-column:hover .line {
+    width: 10rem;
+}
+
+.moon-info .moon-info-column p {
+    transition: color 0.3s ease;
+}
+
+.moon-info .moon-info-column:hover p {
+    color: #00ffff;
+}
+
+/* Page 5 */
+
+.page-5 {
+    padding: 2rem 0;
+    height: 100vh;
+    position: relative;
+    margin-top: 10rem;
+    z-index: 1;
+}
+
 
 
 
