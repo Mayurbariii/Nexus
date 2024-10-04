@@ -8,6 +8,10 @@
     background-color: #000000;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -83,9 +87,6 @@
 .menu ul li a:hover::after {
     transform: translateY(0);
 }
-
-
-
 
 .header {
     display: flex;
@@ -190,14 +191,43 @@
     height: 80%;
     object-fit: cover;
     margin-top: 6rem;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.image-container img {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1.5);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.5);
+    }
+    100% {
+        transform: translateY(0) scale(1.5);
+    }
 }
 
 
-/* Page 2 */
 
-.page-2 {
+/* Page 3 */
+
+.page-3 {
     padding: 2rem 0;
-
 }
 
 .info-section .title-column {
@@ -239,6 +269,23 @@
     width: 10rem;
 }
 
+.page-3 .right img {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 /* Page 4 */
 
 .page-4 {
@@ -246,6 +293,33 @@
     height: 100vh;
 }
 
+.moon-info .moon-kreon {
+    animation: rotate-kreon 120s linear infinite;
+    border-radius: 50%;
+}
+
+.moon-info .moon-vara {
+    animation: rotate-vara 144s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes rotate-kreon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-vara {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .moon-info .moon-info-column {
     transition: all 0.3s ease;
 }
@@ -255,6 +329,7 @@
 }
 
 .moon-info .moon-info-column h3 {
+    color: wheat;
     margin-bottom: 0.5rem;
 }
 
@@ -286,6 +361,22 @@
     position: relative;
     margin-top: 10rem;
     z-index: 1;
+}
+
+.left-column img {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .core-layer {
@@ -320,8 +411,27 @@
     color: #00ffff;
 }
 
-
 /* Page 6 */
+
+.page-6 .background-image {
+    animation: floatPlanet 8s ease-in-out infinite;
+}
+
+@keyframes floatPlanet {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-15px) rotate(1deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(15px) rotate(-1deg);
+    }
+}
+
 
 .info-box {
     transition: all 0.3s ease;
@@ -370,8 +480,3 @@
     max-height: 200px; /* Adjust this value based on your content */
     transform: translateY(0);
 }
-
-
-
-
-

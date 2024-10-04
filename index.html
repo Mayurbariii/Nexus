@@ -19,7 +19,7 @@
         <div class="menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Species</a></li>
+                <li><a href="species.html">Species</a></li>
                 <li><a href="#">Geology</a></li>
                 <li><a href="#">Chemosynthesis</a></li>
             </ul>
@@ -52,9 +52,8 @@
         <div class="image-container" style="padding-top: 3rem; width: 100%; height: 100vh; overflow: hidden; position: relative;">
             <img src="planet-1.png" alt="Zoomed Image" style="width: 100%; height: 100%; object-fit: contain; object-position: bottom; transform: scale(1.5); z-index: 0;">
         </div>
-        <div class="overlay" style="position: absolute; top: calc(150vh + 3rem); left: 10%; width: 80%; height: 80%; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); z-index: 1;">
-        <!-- Content for the overlay can be added here -->
-            <h2 style="color: white; font-size: 2rem; text-align: center; padding-top: 2rem; padding-bottom: 2rem; background-color: transparent; display: flex; justify-content: center; align-items: center; height: 100%;">Video is here</h2>
+        <div class="overlay" style="position: absolute; top: calc(150vh + 3rem); left: 10%; width: 80%; height: 80%; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); z-index: 1; overflow: hidden;">
+            <iframe src="video-1.mp4" style="width: 100%; height: 100%; border: none;" allow="autoplay" autoplay muted loop></iframe>
         </div>
     </div>
 
@@ -118,7 +117,7 @@
             <div class="moon-info" style="margin-top: 7rem;">
                 <div style="height: 50vh; display: flex; align-items: center; justify-content: space-between;">
                     <div style="flex: 1; max-width: 60%;">
-                        <h2 style="font-size: 2rem; color: #00ffff; margin-bottom: 1rem;">Kreon (Big)</h2>
+                        <h2 style="font-size: 2rem; color: wheat; margin-bottom: 1rem;">Kreon (Big)</h2>
                         <p style="color: white; font-size: 1rem; line-height: 1.6; margin-bottom: 2rem;">
                             Kreon is the larger of Nexus's two moons. Its surface is covered in a thick layer of ice, beneath which lies a vast ocean. The tidal forces from Nexus create enough heat to maintain this liquid water, making Kreon a potential harbor for extraterrestrial life.
                         </p>
@@ -147,12 +146,12 @@
                         </div>
                     </div>
                     </div>
-                    <img src="kreon-moon.png" alt="Kreon Moon" style="width: 35%; background: transparent;">
+                    <img class="moon-kreon" src="kreon-moon.png" alt="Kreon Moon" style="width: 35%; background: transparent;">
                 </div>
 
                 <div style="height: 50vh; display: flex; align-items: center; justify-content: space-between; margin-top: 8rem;">
                     <div style="flex: 1; max-width: 60%;">
-                        <h2 style="font-size: 2rem; color: #00ffff; margin-bottom: 1rem;">Vara (Small)</h2>
+                        <h2 style="font-size: 2rem; color: wheat; margin-bottom: 1rem;">Vara (Small)</h2>
                         <p style="color: white; font-size: 1rem; line-height: 1.6;">
                             Vara, the smaller moon, is a rocky body with a thin atmosphere. Its surface is marked by numerous impact craters and vast lava plains, evidence of past volcanic activity. Despite its small size, Vara plays a crucial role in Nexus's tidal systems.
                         </p>
@@ -181,7 +180,7 @@
                         </div>
                     </div>
                     </div>
-                    <img src="vara-moon.png" alt="Vara Moon" style="width: 35%; background: transparent; margin-top: 8rem;">
+                    <img class="moon-vara" src="vara-moon.png" alt="Vara Moon" style="width: 35%; background: transparent; margin-top: 8rem;">
                 </div>
             </div>
         </div>
@@ -196,7 +195,7 @@
                 <img src="core-image2.png" alt="Core Structure" style="width: 100%; height: auto;">
             </div>
             <div class="right-column" style="width: 50%; padding-left: 2rem;">
-                <h2 style="font-size: 2.5rem; color: #00ffff; margin-bottom: 5rem;">Core Structure of Nexus</h2>
+                <h2 style="font-size: 2.5rem; color: white; margin-bottom: 5rem;">Core Structure of Nexus</h2>
                 <div class="core-info" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                     <div class="core-layer">
                         <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem;">Outer Core</h3>
@@ -234,35 +233,36 @@
 
 
     <!-- Page 6 -->
-    <div class="page-6" style="position: relative; height: 100vh; width: 100%; display: flex; align-items: center; padding: 2rem 0; margin-top: 80vh; margin-bottom: 20vh;">
-        <div class="background-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('planet-1.png'); background-size: contain; background-position: center; background-repeat: no-repeat; z-index: 1; "></div>
+    <div class="page-6" style="position: relative; height: 100vh; width: 100%; display: flex; align-items: center; padding: 2rem 0; margin-top: 20vh; margin-bottom: 20vh;">
+        <div class="background-image" style="margin-top: 10rem; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('planet-1.png'); background-size: contain; background-position: center; background-repeat: no-repeat; z-index: 1; "></div>
         
         <div class="container" style="background: transparent; position: relative; width: 100%; max-width: 1200px; margin: 0 auto; z-index: 2;">
-            <h2 style="font-size: 2.5rem; color: white; margin-bottom: 3rem; text-align: center; visibility: hidden;">6 Need-to-Know Facts About Nexus</h2>
+            <h2 style="font-size: 2.5rem; color: white; margin-bottom: 3rem; text-align: center;">6 Need-to-Know Facts About Nexus</h2>
             <div class="info-grid" style="background: transparent; display: grid; grid-template-columns: repeat(3, 300px); gap: 2rem; justify-content: center; margin-top: 8rem;">
                 <div class="info-box" style="background: transparent; padding: 2rem; border-radius: 10px; border: 1px solid #ffffff; text-align: center;">
                     <h3 style="background: transparent; color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: bold;">ROCKY PLANET</h3>
-                    <p style="background: transparent; color: white; font-size: 0.9rem; line-height: 1.4;">The rocky exoplanet Nexus is a world of volcanic activity and deep-sea hydrothermal vents, providing a unique environment for chemosynthetic life to thrive. Life may exist in a variety of forms and conditions.</p>
+                    <p style="background: transparent; color: white; font-size: 0.9rem; line-height: 1.4;">The rocky exoplanet Nexus is rich in volcanic activity and deep-sea hydrothermal vents, creating a unique environment where chemosynthetic life thrives in diverse forms.</p>
                 </div>
                 <div class="info-box" style="background: transparent; padding: 2rem; border-radius: 10px; border: 1px solid #ffffff; text-align: center;">
                     <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: bold;">CHEMOSYNTHETIC LIFE</h3>
-                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">The nexus ocean, a dark and alien realm, is home to a thriving ecosystem fueled by chemosynthesis, demonstrating the extraordinary adaptability of life and the potential for unconventional forms of existence</p>
+                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">
+                        The Nexus ocean, a dark alien realm, hosts a thriving ecosystem driven by chemosynthesis, showcasing life's adaptability and potential for unconventional existence.</p>
                 </div>
                 <div class="info-box" style="background: transparent; padding: 2rem; border-radius: 10px; border: 1px solid #ffffff; text-align: center;">
                     <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: bold;">GEOLOGICAL ACTIVITY</h3>
-                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">nexus's surface, a stark contrast of dark, rocky plains and bright, icy deposits, resembles a celestial eye, hinting at a planet with a complex and dynamic history.</p>
+                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">Nexus's surface, a mix of dark rocky plains and bright icy deposits, resembles a celestial eye, revealing its complex and dynamic history.</p>
                 </div>
                 <div class="info-box" style="background: transparent; padding: 2rem; border-radius: 10px; border: 1px solid #ffffff; text-align: center;">
                     <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: bold;"> GRAVITATIONAL PULL OF NEXUS</h3>
-                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">The combination of nexus's slightly larger radius and higher gravity creates a gravitational pull that is noticeably stronger than Earth's, which could have interesting effects on the planet's atmosphere, weather patterns, and geological activity.</p>
+                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">Nexus's larger radius and stronger gravity create a more intense gravitational pull than Earth's, affecting its atmosphere, weather, and geological activity.</p>
                 </div>
                 <div class="info-box" style="background: transparent; padding: 2rem; border-radius: 10px; border: 1px solid #ffffff; text-align: center;">
                     <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: bold;">FAR, FAR AWAY</h3>
-                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">The combination of Kreon's stabilizing influence on Nexus' axial tilt, orbiting at a medium distance, and Vara's disruptive tidal patterns, orbiting closer to the planet, creates a unique environment for life, fostering a diverse and dynamic ecosystem.</p>
+                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">Kreon's stabilizing influence and Vara's disruptive tidal forces on Nexus create a unique environment that fosters a diverse and dynamic ecosystem.</p>
                 </div>
                 <div class="info-box" style="background: transparent; padding: 2rem; border-radius: 10px; border: 1px solid #ffffff; text-align: center;">
                     <h3 style="color: white; font-size: 1.4rem; margin-bottom: 1rem; font-weight: bold;">LIVING ON THE EDGE</h3>
-                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">The frequent solar flares from the red dwarf star that Nexus orbits would have exposed any life on the planet to harsher conditions of radiation, potentially shaping its evolution in interesting ways.</p>
+                    <p style="color: white; font-size: 0.9rem; line-height: 1.4;">Frequent solar flares from Nexus's red dwarf star expose life to harsh radiation, likely shaping its evolution in unique ways.</p>
                 </div>
             </div>
         </div>
@@ -278,8 +278,11 @@
             <div class="footer-links" style="margin-bottom: 1rem;">
                 <ul style="list-style-type: none; padding: 0; display: flex;">
                     <li style="margin-right: 2rem;"><a href="#" style="color: white; text-decoration: none; font-size: 1rem; transition: color 0.3s ease;">Home</a></li>
-                    <li style="margin-right: 2rem;"><a href="#" style="color: white; text-decoration: none; font-size: 1rem; transition: color 0.3s ease;">About</a></li>
-                    <li><a href="#" style="color: white; text-decoration: none; font-size: 1rem; transition: color 0.3s ease;">Contact</a></li>
+                    <li style="margin-right: 2rem;"><a href="#" style="color: white; text-decoration: none; font-size: 1rem; transition: color 0.3s ease;">Species</a></li>
+                    <li style="margin-right: 2rem;"><a href="#" style="color: white; text-decoration: none; font-size: 1rem; transition: color 0.3s ease;">Geology</a></li>
+                    <li style="margin-right: 2rem;"><a href="#" style="color: white; text-decoration: none; font-size: 1rem; transition: color 0.3s ease;">Chemosynthesis</a></li>
+                    <li style="margin-right: 2rem;"><a href="#" style="color: white; text-decoration: none; font-size: 1rem; transition: color 0.3s ease;">Credits</a></li>
+
                 </ul>
             </div>
             <div class="footer-social" style="margin-bottom: 1rem;">
@@ -289,7 +292,7 @@
             </div>
         </div>
         <div style="text-align: center; margin-top: 2rem; color: #666; font-size: 0.9rem;">
-            <p>&copy; 2023 Nexus Exploration. All rights reserved.</p>
+            <p>&copy; 2024 Nexus Exploration. All rights reserved.</p>
         </div>
     </footer>
 
