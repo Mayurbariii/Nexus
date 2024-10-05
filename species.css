@@ -140,4 +140,38 @@ body {
     pointer-events: none;
     z-index: 1;
   }
+
+  .species-category {
+    background: transparent;
+  }
+
+  .species-category img {
+    background: transparent;
+  }
+
+
+  .species-scroll {
+    margin-left: 8rem;
+    overflow-x: auto;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
   
+  .species-scroll::-webkit-scrollbar {
+    display: none;  /* WebKit */
+  }
+
+  .species-card {
+    transition: transform 0.3s ease;
+  }
+
+  .species-card:hover {
+    transform: translateY(10px) scale(1.05);
+  }
+
+  .species-card img {
+    transition: transform 0.3s ease;
+  }
+
+
+

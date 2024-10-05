@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    background-color: #000000;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 10rem;
+    height: 5rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-right: 1rem;
+    position: relative;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00D7FF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    filter: blur(1px);
+}
+
+.menu ul li a::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00D7FF;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #00D7FF;
+}
+
+.menu ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.menu ul li a:hover::after {
+    transform: translateY(0);
+}
+
+/* Page 2 */
+/* Page 2 */
+.page-2 .bg-gray-900 {
+    transition: all 0.3s ease;
+}
+
+.page-2 .bg-gray-900:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+}
+
+.page-2 h3 {
+    transition: color 0.3s ease;
+}
+
+.page-2 .bg-gray-900:hover h3 {
+    color: #00ffff;
+}
+
+.page-2 p {
+    transition: color 0.3s ease;
+}
+
+.page-2 .bg-gray-900:hover p {
+    color: #ffffff;
+}
+
+.page-2 ul li {
+    transition: all 0.3s ease;
+}
+
+.page-2 ul li:hover {
+    transform: translateX(10px);
+    color: #00ffff;
+}
+
+.page-2 ul li:hover .text-cyan-400 {
+    transform: scale(1.2);
+}
+
+
+.page-3 {
+    position: relative;
+}
+
+.compound {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.compound:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.compound::after {
+    content: attr(data-info);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+.compound:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.compound h3,
+.compound p {
+    background-color: transparent;
+}
+
+.compound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compound h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.compound p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.h2s:hover { background-color: rgba(255, 165, 0, 0.9); }
+.ch4:hover { background-color: rgba(0, 128, 0, 0.9); }
+.fe:hover { background-color: rgba(139, 69, 19, 0.9); }
+.co2:hover { background-color: rgba(70, 130, 180, 0.9); }

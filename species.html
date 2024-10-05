@@ -21,7 +21,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="species.html">Species</a></li>
                 <li><a href="#">Geology</a></li>
-                <li><a href="#">Chemosynthesis</a></li>
+                <li><a href="chemo.html">Chemosynthesis</a></li>
             </ul>
             
         </div>
@@ -30,12 +30,11 @@
 
     <!-- Page 1 -->
     <div class="page1">
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8" style="margin-top: 10vh;">
         <div class="flex justify-between items-center">
             <h1 class="text-4xl text-white">Species</h1>
-            /* From Uiverse.io by LightAndy1 */ 
-<div class="group">
-  <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+        <div class="group">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
     <g>
       <path
         d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
@@ -43,6 +42,10 @@
     </g>
   </svg>
 
+
+  <svg viewBox="0 0 24 24" aria-hidden="true" class="filter-icon" style="width: 24px; height: 24px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+    <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/>
+  </svg>
   <input
     id="query"
     class="input"
@@ -50,11 +53,170 @@
     placeholder="Search..."
     name="searchbar"
   />
-</div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="species-container" style="width: 80%; margin: 2rem auto; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); overflow: hidden; padding: 2rem;">
+        <div class="species-category">
+            <!-- <h2 class="text-2xl text-white mb-4">Microorganisms</h2> -->
+            
 
         </div>
+
+        <div class="species-category mt-8" style="margin-top: 20vh;" style="background: transparent;">
+            <div class="species-scroll flex overflow-x-auto pb-4" style="background: transparent;">
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Tube Worms", "subtitle": "Deep-sea Invertebrates", "description": "Tube worms are marine invertebrates that live in long tubes attached to the ocean floor near hydrothermal vents. They have no mouth, gut, or anus, and rely on symbiotic bacteria for nutrition."}' style="background-color: rgb(0, 100, 200);">
+                    <img src="alien-fish.png" alt="Tube Worms" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Tube Worms</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Yeti Crabs", "subtitle": "Kiwa hirsuta", "description": "Yeti crabs are a type of deep-sea crab known for their hairy or furry appearance. They live near hydrothermal vents and are believed to farm bacteria on their hair-like structures for food."}' style="background-color: rgb(150, 75, 0);">
+                    <img src="invertebrate2.jpg" alt="Yeti Crabs" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Yeti Crabs</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Giant Isopods", "subtitle": "Bathynomus giganteus", "description": "Giant isopods are large crustaceans that live in the deep sea. They can grow up to 16 inches long and are scavengers, feeding on dead animals that fall to the ocean floor."}' style="background-color: rgb(100, 100, 100);">
+                    <img src="invertebrate3.jpg" alt="Giant Isopods" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Giant Isopods</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Pompeii Worms", "subtitle": "Alvinella pompejana", "description": "Pompeii worms are one of the most heat-tolerant animals on Earth. They live on the walls of hydrothermal vents where temperatures can reach up to 176°F (80°C)."}' style="background-color: rgb(200, 100, 0);">
+                    <img src="invertebrate4.jpg" alt="Pompeii Worms" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Pompeii Worms</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Dumbo Octopus", "subtitle": "Grimpoteuthis", "description": "The Dumbo octopus is a deep-sea octopus named for its resemblance to the Disney character Dumbo. It has ear-like fins that help it swim in the deep ocean."}' style="background-color: rgb(150, 0, 150);">
+                    <img src="invertebrate5.jpg" alt="Dumbo Octopus" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Dumbo Octopus</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Scaly-foot Snail", "subtitle": "Chrysomallon squamiferum", "description": "The scaly-foot snail is a deep-sea gastropod known for its unique iron-sulfide-coated shell and scales on its foot. It lives near hydrothermal vents in the Indian Ocean."}' style="background-color: rgb(200, 50, 50);">
+                    <img src="invertebrate6.jpg" alt="Scaly-foot Snail" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Scaly-foot Snail</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Xenophyophores", "subtitle": "Giant Single-celled Organisms", "description": "Xenophyophores are giant single-celled organisms found in the deep sea. They can grow up to 20 cm in diameter and are among the largest known single-celled organisms."}' style="background-color: rgb(75, 0, 130);">
+                    <img src="invertebrate7.jpg" alt="Xenophyophores" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Xenophyophores</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Vampire Squid", "subtitle": "Vampyroteuthis infernalis", "description": "The vampire squid is a small cephalopod that lives in the deep sea. Despite its name, it's not a true squid and doesn't feed on blood. It's known for its unique ability to turn itself inside out."}' style="background-color: rgb(0, 128, 128);">
+                    <img src="invertebrate8.jpg" alt="Vampire Squid" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Vampire Squid</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Glass Sponges", "subtitle": "Hexactinellid Sponges", "description": "Glass sponges are deep-sea sponges with skeletons made of silica. They can survive for hundreds or even thousands of years in the cold, dark waters of the deep ocean."}' style="background-color: rgb(255, 165, 0);">
+                    <img src="invertebrate9.jpg" alt="Glass Sponges" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Glass Sponges</h3>
+                    </div>
+                </div>
+                <div class="species-card min-w-[300px] h-[200px] m-4 rounded-lg overflow-visible cursor-pointer transition-all duration-300 hover:scale-105 relative flex flex-col items-center justify-end" onclick="showSpeciesDetails(this)" data-info='{"title": "Anglerfish", "subtitle": "Lophiiformes", "description": "Anglerfish are deep-sea predators known for their distinctive method of predation. They use a bioluminescent growth on their heads to lure prey in the darkness of the deep ocean."}' style="background-color: rgb(50, 50, 50);">
+                    <img src="invertebrate10.jpg" alt="Anglerfish" class="w-full h-full object-cover rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                    <div class="p-2 text-center mt-20">
+                        <h3 class="text-white text-lg">Anglerfish</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-end items-center mt-4 mr-4">
+            <button id="prevBtn" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 rounded-l-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-1">
+                Previous
+            </button>
+            <button id="nextBtn" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 rounded-r-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 ml-1">
+                Next
+            </button>
+        </div>
+
+        <script>
+            const speciesScroll = document.querySelector('.species-scroll');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            const cardWidth = 200 + 32; // width of card + margin
+            const scrollAmount = cardWidth * 3; // scroll 3 cards at a time
+
+            nextBtn.addEventListener('click', () => {
+                speciesScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+
+            prevBtn.addEventListener('click', () => {
+                speciesScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+
+            // Hide/show buttons based on scroll position
+            speciesScroll.addEventListener('scroll', () => {
+                prevBtn.style.display = speciesScroll.scrollLeft > 0 ? 'block' : 'none';
+                nextBtn.style.display = 
+                    speciesScroll.scrollLeft < speciesScroll.scrollWidth - speciesScroll.clientWidth 
+                    ? 'block' 
+                    : 'none';
+            });
+
+            // Initial button visibility
+            prevBtn.style.display = 'none';
+        </script>
+        </div>
+
+        <!-- Add more species categories as needed -->
     </div>
-    </div>
+
+    <script>
+        function showSpeciesDetails(card) {
+            const info = JSON.parse(card.getAttribute('data-info'));
+            const detailsContainer = document.createElement('div');
+            detailsContainer.className = 'species-details fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50 opacity-0 transition-opacity duration-300';
+            detailsContainer.innerHTML = `
+                <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4 relative transform scale-95 transition-all duration-300">
+                    <button class="absolute top-4 right-4 text-gray-600 hover:text-gray-800" onclick="closeSpeciesDetails(this)">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 pr-4">
+                            <img src="${card.querySelector('img').src}" alt="${info.title}" class="w-full h-auto rounded-lg shadow-lg">
+                        </div>
+                        <div class="md:w-1/2 mt-6 md:mt-0 md:pl-6">
+                            <h2 class="text-3xl font-bold text-gray-800 mb-2">${info.title}</h2>
+                            <h3 class="text-xl text-gray-600 mb-4">${info.subtitle}</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed">${info.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(detailsContainer);
+            
+            // Trigger reflow to ensure the transition works
+            detailsContainer.offsetHeight;
+            
+            // Add the visible class to fade in and scale up
+            detailsContainer.classList.add('opacity-100');
+            detailsContainer.querySelector('div').classList.add('scale-100');
+        }
+
+        function closeSpeciesDetails(closeButton) {
+            const detailsContainer = closeButton.closest('.species-details');
+            detailsContainer.classList.remove('opacity-100');
+            detailsContainer.querySelector('div').classList.remove('scale-100');
+            
+            // Remove the element after the transition
+            setTimeout(() => {
+                detailsContainer.remove();
+            }, 300);
+        }
+    </script>
 
     
 </body>

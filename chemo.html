@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Nexus</title>
+    <link rel="stylesheet" href="chemo.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="logo-1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar" style="padding-top: 0; padding-bottom: 0; position: sticky;">
+        <div class="logo">
+            <img src="logo-name.png" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="#">Geology</a></li>
+                <li><a href="chemo.html">Chemosynthesis</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <!-- Page 1 -->
+    <div class="page-1 flex h-screen">
+        <!-- Left side -->
+        <div class="w-3/5 flex flex-col justify-center px-12">
+            <h1 class="text-4xl font-bold text-white mb-6">Is Chemosynthesis Possible?</h1>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Chemosynthesis is a real process where organisms produce energy from inorganic chemicals, not sunlight. It's crucial in deep-sea environments like hydrothermal vents. Chemosynthetic bacteria and archaea support unique ecosystems in these lightless areas. This discovery has broadened our understanding of where life can exist, with implications for extraterrestrial life search.
+            </p>
+        </div>
+        <!-- Right side -->
+        <div class="w-1/2 bg-cover bg-center relative overflow-hidden" style="background-image: url('vent1.jpeg');">
+            <div class="absolute inset-0">
+                <!-- Bubble 1: Hydrogen Sulfide -->
+                <div class="bubble h2s" style="left: 20%; top: 70%;">H₂S</div>
+                <!-- Bubble 2: Methane -->
+                <div class="bubble ch4" style="left: 60%; top: 50%;">CH₄</div>
+                <!-- Bubble 3: Iron -->
+                <div class="bubble fe" style="left: 40%; top: 30%;">Fe</div>
+                <!-- Bubble 4: Carbon Dioxide -->
+                <div class="bubble co2" style="left: 80%; top: 60%;">CO₂</div>
+            </div>
+        </div>
+
+        <style>
+            .bubble {
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 14px;
+                color: #fff;
+                animation: float 5s infinite ease-in-out;
+            }
+            .h2s { background-color: rgba(255, 165, 0, 0.7); animation-delay: 0s; }
+            .ch4 { background-color: rgba(0, 128, 0, 0.7); animation-delay: 1s; }
+            .fe { background-color: rgba(139, 69, 19, 0.7); animation-delay: 2s; }
+            .co2 { background-color: rgba(70, 130, 180, 0.7); animation-delay: 3s; }
+
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-20px); }
+            }
+        </style>
+        <div class="w-1/2 bg-cover bg-center" style="background-image: url('vent1.jpeg');">
+            <!-- You can replace 'chemosynthesis-image.jpg' with an actual image related to chemosynthesis -->
+        </div>
+        
+    </div>
+    <!-- Page 2 -->
+    <div class="page-2 min-h-screen bg-black text-white p-12 flex flex-col items-center">
+        <h2 class="text-4xl font-bold mb-12 text-center">How Chemosynthesis Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-cyan-400" style="background: transparent;">Step 1: Chemical Energy</h3>
+                <p class="text-gray-300" style="background: transparent;">Chemosynthetic organisms obtain energy from inorganic chemicals in their environment, such as hydrogen sulfide, methane, or iron.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-cyan-400" style="background: transparent;">Step 2: Carbon Fixation</h3>
+                <p class="text-gray-300" style="background: transparent;">Using this chemical energy, they convert carbon dioxide into organic compounds, similar to how plants use sunlight in photosynthesis.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-cyan-400" style="background: transparent;">Step 3: Biomass Production</h3>
+                <p class="text-gray-300" style="background: transparent;">These organic compounds are used to build cellular structures and sustain life, forming the base of a unique food chain.</p>
+            </div>
+        </div>
+        <div class="mt-16 w-full max-w-4xl">
+            <h3 class="text-3xl font-semibold mb-6 text-center">Environments Where Chemosynthesis Occurs</h3>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+                <li class="flex items-center"><span class="mr-2 text-cyan-400">•</span>Deep-sea hydrothermal vents</li>
+                <li class="flex items-center"><span class="mr-2 text-cyan-400">•</span>Cold seeps on the ocean floor</li>
+                <li class="flex items-center"><span class="mr-2 text-cyan-400">•</span>Underground cave systems</li>
+                <li class="flex items-center"><span class="mr-2 text-cyan-400">•</span>Hot springs</li>
+                <li class="flex items-center"><span class="mr-2 text-cyan-400">•</span>Potentially on other planets or moons with the right chemical conditions</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page-3 h-screen bg-black text-white p-12 relative overflow-hidden">
+        <h2 class="text-3xl font-bold mb-8">Chemical Compounds in Chemosynthesis</h2>
+        <div class="compound-container relative h-full">
+            <div class="compound h2s" data-info="Hydrogen sulfide is a key energy source for many chemosynthetic organisms, especially those found near hydrothermal vents.">
+                <h3>H₂S</h3>
+                <p>Hydrogen Sulfide</p>
+            </div>
+            <div class="compound ch4" data-info="Methane is utilized by methanotrophs in chemosynthesis, often found in cold seeps and some hydrothermal vents.">
+                <h3>CH₄</h3>
+                <p>Methane</p>
+            </div>
+            <div class="compound fe" data-info="Iron-oxidizing bacteria use ferrous iron (Fe²⁺) as an energy source in chemosynthesis, often found in iron-rich environments.">
+                <h3>Fe²⁺</h3>
+                <p>Iron</p>
+            </div>
+            <div class="compound co2" data-info="Carbon dioxide is fixed into organic compounds during chemosynthesis, similar to its role in photosynthesis.">
+                <h3>CO₂</h3>
+                <p>Carbon Dioxide</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .compound-container {
+            perspective: 1000px;
+        }
+        .compound {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: #fff;
+            animation: float 5s infinite ease-in-out;
+        }
+        .h2s { 
+            background-color: rgba(255, 165, 0, 0.7); 
+            animation-delay: 0s;
+            top: 20%;
+            left: 20%;
+        }
+        .ch4 { 
+            background-color: rgba(0, 128, 0, 0.7); 
+            animation-delay: 1s;
+            top: 60%;
+            left: 30%;
+        }
+        .fe { 
+            background-color: rgba(139, 69, 19, 0.7); 
+            animation-delay: 2s;
+            top: 30%;
+            left: 60%;
+        }
+        .co2 { 
+            background-color: rgba(70, 130, 180, 0.7); 
+            animation-delay: 3s;
+            top: 70%;
+            left: 70%;
+        }
+
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0) translateZ(0) rotateX(0) rotateY(0);
+            }
+            25% {
+                transform: translateY(-20px) translateZ(20px) rotateX(5deg) rotateY(5deg);
+            }
+            50% { 
+                transform: translateY(-40px) translateZ(40px) rotateX(10deg) rotateY(10deg);
+            }
+            75% {
+                transform: translateY(-20px) translateZ(20px) rotateX(5deg) rotateY(5deg);
+            }
+        }
+    </style>
+
+    <div class="page-4" style="padding: 4rem 0; background-color: #000;">
+        <h2 style="text-align: center; color: #00D7FF; font-size: 2.5rem; margin-bottom: 3rem;">Chemosynthetic Processes</h2>
+        <div class="card-container" style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            <div class="card" style="width: 250px; background-color: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="color: #00D7FF; font-size: 1.5rem; margin-bottom: 1rem;">Sulfur Oxidation</h3>
+                <p style="color: #fff; font-size: 1rem;">Microorganisms oxidize hydrogen sulfide to obtain energy, producing sulfur or sulfate as a byproduct.</p>
+            </div>
+            <div class="card" style="width: 250px; background-color: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="color: #00D7FF; font-size: 1.5rem; margin-bottom: 1rem;">Methane Oxidation</h3>
+                <p style="color: #fff; font-size: 1rem;">Methanotrophs use methane as their energy source, converting it to formaldehyde.</p>
+            </div>
+            <div class="card" style="width: 250px; background-color: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="color: #00D7FF; font-size: 1.5rem; margin-bottom: 1rem;">Iron Oxidation</h3>
+                <p style="color: #fff; font-size: 1rem;">Certain bacteria oxidize ferrous iron to ferric iron, deriving energy from this process.</p>
+            </div>
+            <div class="card" style="width: 250px; background-color: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="color: #00D7FF; font-size: 1.5rem; margin-bottom: 1rem;">Hydrogen Oxidation</h3>
+                <p style="color: #fff; font-size: 1rem;">Some microorganisms use hydrogen as an electron donor, combining it with CO2 to produce organic compounds.</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 215, 255, 0.2);
+        }
+    </style>
+    
+</body>
+</html>
